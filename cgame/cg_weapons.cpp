@@ -1355,6 +1355,10 @@ void CG_MissileHitWall( int weapon, int clientNum, vector3 *origin, vector3 *dir
 		trap->FX_PlayEffectID( media.efx.thermal.explosion, origin, dir, -1, -1, qfalse );
 		trap->FX_PlayEffectID( media.efx.thermal.shockwave, origin, &up, -1, -1, qfalse );
 		break;
+		
+	case WP_BATTLEDROID:
+ 		FX_BlasterWeaponHitWall( origin, dir );
+ 		break;
 
 	case WP_EMPLACED_GUN:
 		FX_BlasterWeaponHitWall( origin, dir );
@@ -1436,6 +1440,10 @@ void CG_MissileHitPlayer( int weapon, vector3 *origin, vector3 *dir, int entityN
 		//FIXME: Its own effect?
 		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
 		break;
+		
+	case WP_BATTLEDROID:
+ 		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+ 		break;
 
 	default:
 		break;
