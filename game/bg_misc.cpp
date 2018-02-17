@@ -244,6 +244,7 @@ const int WeaponReadyAnim[WP_NUM_WEAPONS] =
 	TORSO_WEAPONREADY10,//TORSO_WEAPONREADY12,//WP_DET_PACK,
 	TORSO_WEAPONREADY3,//WP_CONCUSSION
 	TORSO_WEAPONREADY2,//WP_BRYAR_OLD,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_BATTLEDROID,
 
 	//NOT VALID (e.g. should never really be used):
 	BOTH_STAND1,//WP_EMPLACED_GUN,
@@ -269,6 +270,8 @@ const int WeaponReadyLegsAnim[WP_NUM_WEAPONS] = {
 	BOTH_STAND1,//TORSO_WEAPONREADY12,//WP_DET_PACK,
 	BOTH_STAND1,//WP_CONCUSSION
 	BOTH_STAND1,//WP_BRYAR_OLD,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_BATTLEDROID,
+  
 
 	//NOT VALID (e.g. should never really be used):
 	BOTH_STAND1,//WP_EMPLACED_GUN,
@@ -292,8 +295,9 @@ const int WeaponAttackAnim[WP_NUM_WEAPONS] = {
 	BOTH_THERMAL_THROW,//WP_THERMAL,
 	BOTH_ATTACK3,//BOTH_ATTACK11,//WP_TRIP_MINE,
 	BOTH_ATTACK3,//BOTH_ATTACK12,//WP_DET_PACK,
-	BOTH_ATTACK3,//WP_CONCUSSION, //Raz: Fixed bryar pistol animation
+	BOTH_ATTACK3,//WP_CONCUSSION,
 	BOTH_ATTACK2,//WP_BRYAR_OLD,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_BATTLEDROID,
 
 	//NOT VALID (e.g. should never really be used):
 	BOTH_STAND1,//WP_EMPLACED_GUN,
@@ -707,6 +711,7 @@ const gitem_t bg_itemlist[] = {
 	{ "weapon_concussion_rifle", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_c_rifle", 50, IT_WEAPON, WP_CONCUSSION, "models/weapons2/concussion/c_rifle.md3", { "models/weapons2/concussion/c_rifle_w.glm", NULL, NULL }, "", "", "@MENUS_CONC_RIFLE_DESC" },
 	{ "weapon_bryar_pistol", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_briar", 100, IT_WEAPON, WP_BRYAR_OLD, "models/weapons2/briar_pistol/briar_pistol.md3", { "models/weapons2/briar_pistol/briar_pistol_w.glm", NULL, NULL }, "", "", "@SP_INGAME_BLASTER_PISTOL" },
 	{ "weapon_blaster", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_blaster", 100, IT_WEAPON, WP_BLASTER, "models/weapons2/blaster_r/blaster.md3", { "models/weapons2/blaster_r/blaster_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_battledroid", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_droidblaster", 100, IT_WEAPON, WP_BATTLEDROID, "models/weapons2/droidblaster/bd_blaster_mp.md3", { "models/weapons2/droidblaster/bd_blaster_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
 	{ "weapon_disruptor", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_disruptor", 100, IT_WEAPON, WP_DISRUPTOR, "models/weapons2/disruptor/disruptor.md3", { "models/weapons2/disruptor/disruptor_w.glm", NULL, NULL }, "", "", "@MENUS_THIS_NEFARIOUS_WEAPON" },
 	{ "weapon_bowcaster", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_bowcaster", 100, IT_WEAPON, WP_BOWCASTER, "models/weapons2/bowcaster/bowcaster.md3", { "models/weapons2/bowcaster/bowcaster_w.glm", NULL, NULL }, "", "", "@MENUS_THIS_ARCHAIC_LOOKING" },
 	{ "weapon_repeater", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_repeater", 100, IT_WEAPON, WP_REPEATER, "models/weapons2/heavy_repeater/heavy_repeater.md3", { "models/weapons2/heavy_repeater/heavy_repeater_w.glm", NULL, NULL }, "", "", "@MENUS_THIS_DESTRUCTIVE_PROJECTILE" },
