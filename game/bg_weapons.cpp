@@ -26,6 +26,7 @@ const vector3 WP_MuzzlePoint[WP_NUM_WEAPONS] = {
 	{ 12.0f,	 0.0f,		 -4.0f }, // WP_DET_PACK,
 	{ 12.0f,	 6.0f,		 -6.0f }, // WP_CONCUSSION
 	{ 12.0f,	 6.0f,		 -6.0f }, // WP_BRYAR_OLD,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_BATTLEDROID,
 };
 
 const weaponData_t weaponData[WP_NUM_WEAPONS] = {
@@ -47,6 +48,7 @@ const weaponData_t weaponData[WP_NUM_WEAPONS] = {
 	{ "Det Pack",					AMMO_DETPACK,		0,		1,			800,		0,		0,			0,			{ 0,		400,		0,			0,				0 } },
 	{ "Concussion Rifle",			AMMO_METAL_BOLTS,	40,		40,			800,		0,		0,			0,			{ 50,		1200,		0,			0,				0 } },
 	{ "Bryar Pistol",				AMMO_BLASTER,		15,		2,			400,		0,		0,			0,			{ 2,		400,		1,			1500,			200 } },
+	{ "E-5 Carbine",				AMMO_BLASTER,		5,		2,			350,		0,		0,			0,			{ 3,		150,		0,			0,				0 } },
 	{ "Emplaced Gun",				AMMO_NONE,			0,		0,			100,		0,		0,			0,			{ 0,		100,		0,			0,				0 } },
 	{ "Turret",						AMMO_NONE,			0,		0,			0,			0,		0,			0,			{ 0,		0,			0,			0,				0 } },
 };
