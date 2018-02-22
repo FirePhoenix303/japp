@@ -1128,3 +1128,12 @@ void			SE_R_AddRefEntityToScene( const refEntity_t *re, int gameEntity );
 qboolean		SE_RenderThisEntity( vector3 *testOrigin, int gameEntity );
 qboolean		Server_Supports( uint32_t supportFlag );
 void			TurretClientRun( centity_t *ent );
+// Clone
+fxHandle_t	cloneShotEffect;
+fxHandle_t	cloneOverchargeEffect;
+fxHandle_t	cloneWallImpactEffect;
+fxHandle_t	cloneFleshImpactEffect;
+void FX_CloneProjectileThink( centity_t *cent, const struct weaponInfo_s *weapon );
+void FX_CloneAltFireThink( centity_t *cent, const struct weaponInfo_s *weapon );
+void FX_CloneWeaponHitWall( vec3_t origin, vec3_t normal );
+void FX_CloneWeaponHitPlayer( vec3_t origin, vec3_t normal, qboolean humanoid );
