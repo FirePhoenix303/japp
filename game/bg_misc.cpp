@@ -245,6 +245,16 @@ const int WeaponReadyAnim[WP_NUM_WEAPONS] =
 	TORSO_WEAPONREADY3,//WP_CONCUSSION
 	TORSO_WEAPONREADY2,//WP_BRYAR_OLD,
 	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_BATTLEDROID,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_THEFIRSTORDER,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_CLONECARBINE,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_REBELBLASTER,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_CLONERIFLE,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_CLONECOMMANDO,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_REBELRIFLE,
+	TORSO_WEAPONREADY2,//WP_REY,
+	TORSO_WEAPONREADY2,//WP_JANGO,
+	TORSO_WEAPONREADY3,//TORSO_WEAPONREADY6,//WP_BOBA,
+	TORSO_WEAPONREADY2,//WP_CLONEPISTOL,
 
 	//NOT VALID (e.g. should never really be used):
 	BOTH_STAND1,//WP_EMPLACED_GUN,
@@ -271,6 +281,16 @@ const int WeaponReadyLegsAnim[WP_NUM_WEAPONS] = {
 	BOTH_STAND1,//WP_CONCUSSION
 	BOTH_STAND1,//WP_BRYAR_OLD,
 	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_BATTLEDROID,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_THEFIRSTORDER,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_CLONECARBINE,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_REBELBLASTER,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_CLONERIFLE,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_CLONECOMMANDO,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_REBELRIFLE,
+	BOTH_STAND1,//WP_REY,
+	BOTH_STAND1,//WP_JANGO,
+	BOTH_STAND1,//TORSO_WEAPONREADY6,//WP_BOBA,
+	BOTH_STAND1,//WP_CLONEPISTOL,
   
 
 	//NOT VALID (e.g. should never really be used):
@@ -298,6 +318,16 @@ const int WeaponAttackAnim[WP_NUM_WEAPONS] = {
 	BOTH_ATTACK3,//WP_CONCUSSION,
 	BOTH_ATTACK2,//WP_BRYAR_OLD,
 	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_BATTLEDROID,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_THEFIRSTORDER,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_CLONECARBINE,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_REBELBLASTER,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_CLONERIFLE,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_CLONECOMMANDO,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_REBELRIFLE,
+	BOTH_ATTACK2,//WP_REY,
+	BOTH_ATTACK2,//WP_JANGO,
+	BOTH_ATTACK3,//BOTH_ATTACK6,//WP_BOBA,
+	BOTH_ATTACK2,//WP_CLONEPISTOL,
 
 	//NOT VALID (e.g. should never really be used):
 	BOTH_STAND1,//WP_EMPLACED_GUN,
@@ -712,6 +742,16 @@ const gitem_t bg_itemlist[] = {
 	{ "weapon_bryar_pistol", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_briar", 100, IT_WEAPON, WP_BRYAR_OLD, "models/weapons2/briar_pistol/briar_pistol.md3", { "models/weapons2/briar_pistol/briar_pistol_w.glm", NULL, NULL }, "", "", "@SP_INGAME_BLASTER_PISTOL" },
 	{ "weapon_blaster", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_blaster", 100, IT_WEAPON, WP_BLASTER, "models/weapons2/blaster_r/blaster.md3", { "models/weapons2/blaster_r/blaster_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
 	{ "weapon_battledroid", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_droidblaster", 100, IT_WEAPON, WP_BATTLEDROID, "models/weapons2/droidblaster/bd_blaster_mp.md3", { "models/weapons2/droidblaster/bd_blaster_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_thefirstorder", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_f11d", 100, IT_WEAPON, WP_THEFIRSTORDER, "models/weapons2/f11d_blaster/blaster.md3", { "models/weapons2/f11d_blaster/blaster_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_clonecarbine", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_dc-15c", 100, IT_WEAPON, WP_CLONECARBINE, "models/weapons2/cloneblst/blaster.md3", { "models/weapons2/cloneblst/blaster_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_rebelblaster", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_dh-17", 100, IT_WEAPON, WP_REBELBLASTER, "models/weapons2/dh-17/dh-17_mp.md3", { "models/weapons2/dh-17/dh-17_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_clonerifle", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_clonerifle", 100, IT_WEAPON, WP_CLONERIFLE, "models/weapons2/clone_repeater/heavy_repeater.md3", { "models/weapons2/clone_repeater/heavy_repeater_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_clonecommando", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_dc-17m", 100, IT_WEAPON, WP_CLONECOMMANDO, "models/weapons2/DC-17m/dc-17m_mp.md3", { "models/weapons2/DC-17m/dc-17m_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_rebelrifle", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_A280", 100, IT_WEAPON, WP_REBELRIFLE, "models/weapons2/A280/a280_mp.md3", { "models/weapons2/A280/a280_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_rey", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_lpa_nn-14", 100, IT_WEAPON, WP_REY, "models/weapons2/lpa_nn-14/blaster_pistol_mp.md3", { "models/weapons2/lpa_nn-14/blaster_pistol_w.glm", NULL, NULL }, "", "", "@SP_INGAME_REY" },
+	{ "weapon_weapon_jango", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_westar", 100, IT_WEAPON, WP_JANGO, "models/weapons2/jango_pistol/briar_pistol.md3", { "models/weapons2/jango_pistol/briar_pistol_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_boba", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_ee-3", 100, IT_WEAPON, WP_BOBA, "models/weapons2/ee-3/ee-3_mp.md3", { "models/weapons2/ee-3/ee-3_w.glm", NULL, NULL }, "", "", "@MENUS_THE_PRIMARY_WEAPON_OF" },
+	{ "weapon_weapon_clonepistol", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_clonepistol", 100, IT_WEAPON, WP_CLONEPISTOL, "models/weapons2/clone/demp2_mp.md3", { "models/weapons2/clone/demp2_w.glm", NULL, NULL }, "", "", "@SP_INGAME_CLONEPISTOL" },
 	{ "weapon_disruptor", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_disruptor", 100, IT_WEAPON, WP_DISRUPTOR, "models/weapons2/disruptor/disruptor.md3", { "models/weapons2/disruptor/disruptor_w.glm", NULL, NULL }, "", "", "@MENUS_THIS_NEFARIOUS_WEAPON" },
 	{ "weapon_bowcaster", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_bowcaster", 100, IT_WEAPON, WP_BOWCASTER, "models/weapons2/bowcaster/bowcaster.md3", { "models/weapons2/bowcaster/bowcaster_w.glm", NULL, NULL }, "", "", "@MENUS_THIS_ARCHAIC_LOOKING" },
 	{ "weapon_repeater", "sound/weapons/w_pkup.wav", "gfx/hud/w_icon_repeater", 100, IT_WEAPON, WP_REPEATER, "models/weapons2/heavy_repeater/heavy_repeater.md3", { "models/weapons2/heavy_repeater/heavy_repeater_w.glm", NULL, NULL }, "", "", "@MENUS_THIS_DESTRUCTIVE_PROJECTILE" },
