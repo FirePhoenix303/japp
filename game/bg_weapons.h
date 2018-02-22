@@ -19,6 +19,16 @@ typedef enum weapon_e {
 	WP_CONCUSSION,
 	WP_BRYAR_OLD,
 	WP_BATTLEDROID,
+	WP_THEFIRSTORDER,
+	WP_CLONECARBINE,
+	WP_REBELBLASTER,
+	WP_CLONERIFLE,
+	WP_CLONECOMMANDO,
+	WP_REBELRIFLE,
+	WP_REY,
+	WP_JANGO,
+	WP_BOBA,
+	WP_CLONEPISTOL,
 	WP_EMPLACED_GUN,
 	WP_TURRET,
 	WP_NUM_WEAPONS
@@ -26,7 +36,7 @@ typedef enum weapon_e {
 weapon_t BG_FindWeapon( const char *name );
 
 #define FIRST_WEAPON		(WP_BRYAR_PISTOL) // this is the first weapon for next and prev weapon switching
-#define LAST_USEABLE_WEAPON (WP_BATTLEDROID) // anything > this will be considered not player useable
+#define LAST_USEABLE_WEAPON 	(WP_CLONEPISTOL) // anything > this will be considered not player useable
 #define MAX_PLAYER_WEAPONS	(WP_NUM_WEAPONS-1) // this is the max you can switch to and get with the give all.
 
 extern const vector3 WP_MuzzlePoint[WP_NUM_WEAPONS];
