@@ -1357,8 +1357,64 @@ void CG_MissileHitWall( int weapon, int clientNum, vector3 *origin, vector3 *dir
 		break;
 		
 	case WP_BATTLEDROID:
- 		FX_BlasterWeaponHitWall( origin, dir );
- 		break;
+		FX_BlasterWeaponHitWall( origin, dir );
+		break;
+
+	case WP_THEFIRSTORDER:
+		FX_BlasterWeaponHitWall( origin, dir );
+		break;
+
+	case WP_CLONECARBINE:
+		FX_CloneWeaponHitWall( origin, dir );
+		break;
+
+	case WP_REBELBLASTER:
+		FX_BlasterWeaponHitWall( origin, dir );
+		break;
+
+	case WP_CLONERIFLE:
+		FX_CloneWeaponHitWall( origin, dir );
+		break;
+
+	case WP_CLONECOMMANDO:
+		FX_CloneWeaponHitWall( origin, dir );
+		break;
+
+	case WP_REBELRIFLE:
+		FX_BlasterWeaponHitWall( origin, dir );
+		break;
+
+	case WP_REY:
+		if ( altFire )
+		{
+			parm = charge;
+			FX_BryarAltHitWall( origin, dir, parm );
+		}
+		else
+		{
+			FX_BryarHitWall( origin, dir );
+		}
+		break;
+
+	case WP_JANGO:
+		FX_BlasterWeaponHitWall( origin, dir );
+		break;
+
+	case WP_BOBA:
+		FX_BlasterWeaponHitWall( origin, dir );
+		break;
+
+	case WP_CLONEPISTOL:
+	if ( altFire )
+	{
+		parm = charge;
+		FX_CloneAltHitWall( origin, dir, parm );
+	}
+	else
+	{
+		FX_CloneWeaponHitWall( origin, dir );
+	}
+	break;
 
 	case WP_EMPLACED_GUN:
 		FX_BlasterWeaponHitWall( origin, dir );
@@ -1442,8 +1498,62 @@ void CG_MissileHitPlayer( int weapon, vector3 *origin, vector3 *dir, int entityN
 		break;
 		
 	case WP_BATTLEDROID:
- 		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
- 		break;
+		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_THEFIRSTORDER:
+		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_CLONECARBINE:
+		FX_CloneWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_REBELBLASTER:
+		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_CLONERIFLE:
+		FX_CloneWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_CLONECOMMANDO:
+		FX_CloneWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_REBELRIFLE:
+		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_REY:
+		if ( altFire )
+		{
+			FX_BryarAltHitPlayer( origin, dir, humanoid );
+		}
+		else
+		{
+			FX_BryarHitPlayer( origin, dir, humanoid );
+		}
+		break;
+
+	case WP_JANGO:
+		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_BOBA:
+		FX_BlasterWeaponHitPlayer( origin, dir, humanoid );
+		break;
+
+	case WP_CLONEPISTOL:
+		if (altFire)
+		{
+			FX_CloneAltHitPlayer(origin, dir, humanoid);
+		}
+		else
+		{
+			FX_CloneWeaponHitPlayer( origin, dir, humanoid );
+		}
+		break;
 
 	default:
 		break;
