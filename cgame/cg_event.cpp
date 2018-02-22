@@ -925,7 +925,7 @@ void CG_G2MarkEvent( entityState_t *es ) {
 	case WP_BLASTER:
 	case WP_DISRUPTOR:
 	case WP_BOWCASTER:
-	case WP_REPEATER:		
+	case WP_REPEATER:
 	case WP_BATTLEDROID:
 	case WP_THEFIRSTORDER:
 	case WP_CLONECARBINE:
@@ -936,7 +936,7 @@ void CG_G2MarkEvent( entityState_t *es ) {
 	case WP_REY:
 	case WP_JANGO:
 	case WP_BOBA:
-	case WP_CLONEPISTOL:		
+	case WP_CLONEPISTOL:
 	case WP_TURRET:
 		if ( !size ) {
 			size = 4.0f;
