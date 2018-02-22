@@ -24,9 +24,19 @@ const vector3 WP_MuzzlePoint[WP_NUM_WEAPONS] = {
 	{ 12.0f,	 0.0f,		 -4.0f }, // WP_THERMAL,
 	{ 12.0f,	 0.0f,		-10.0f }, // WP_TRIP_MINE,
 	{ 12.0f,	 0.0f,		 -4.0f }, // WP_DET_PACK,
-	{ 12.0f,	 6.0f,		 -6.0f }, // WP_CONCUSSION
+	{ 12.0f, 	 6.0f,		 -6.0f }, // WP_CONCUSSION
 	{ 12.0f,	 6.0f,		 -6.0f }, // WP_BRYAR_OLD,
 	{ 12.0f,	 6.0f,		 -6.0f }, // WP_BATTLEDROID,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_THEFIRSTORDER,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_CLONECARBINE,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_REBELBLASTER,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_CLONERIFLE,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_CLONECOMMANDO,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_REBELRIFLE,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_REY,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_JANGO,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_BOBA,
+	{ 12.0f,	 6.0f,		 -6.0f }, // WP_CLONEPISTOL,
 };
 
 const weaponData_t weaponData[WP_NUM_WEAPONS] = {
@@ -48,7 +58,17 @@ const weaponData_t weaponData[WP_NUM_WEAPONS] = {
 	{ "Det Pack",					AMMO_DETPACK,		0,		1,			800,		0,		0,			0,			{ 0,		400,		0,			0,				0 } },
 	{ "Concussion Rifle",			AMMO_METAL_BOLTS,	40,		40,			800,		0,		0,			0,			{ 50,		1200,		0,			0,				0 } },
 	{ "Bryar Pistol",				AMMO_BLASTER,		15,		2,			400,		0,		0,			0,			{ 2,		400,		1,			1500,			200 } },
-	{ "E-5 Carbine",				AMMO_BLASTER,		5,		2,			350,		0,		0,			0,			{ 3,		150,		0,			0,				0 } },
+	{ "E-5 Carbine",			AMMO_BLASTER,		5,		2,			350,		0,		0,			0,			{ 3,		150,		0,			0,				0 } },
+	{ "F-11D",				AMMO_BLASTER,		5,		2,			350,		0,		0,			0,			{ 3,		150,		0,			0,				0 } },
+	{ "DC-15 Carbine",			AMMO_METAL_BOLTS,	5,		2,			350,		0,		0,			0,			{ 3,		150,		0,			0,				0 } },
+	{ "DH-17",				AMMO_BLASTER,		15,		10,			350,		0,		0,			0,			{ 10,		200,		0,			0,				0 } },
+	{ "DC-15 Rifle",			AMMO_METAL_BOLTS,	15,		1,			350,		0,		0,			0,			{ 2,		150,		0,			0,				0 } },
+	{ "DC-17M",				AMMO_METAL_BOLTS,	15,		5,			350,		0,		0,			0,			{ 5,		150,		0,			0,				0 } },
+	{ "A280",				AMMO_POWERCELL,		15,		10,			350,		0,		0,			0,			{ 10,		200,		0,			0,				0 } },
+	{ "LPA NN-14",				AMMO_BLASTER,		15,		1,			800,		0,		0,			0,			{ 2,		800,		0,			0,				0 } },
+	{ "Westar 34",				AMMO_BLASTER,		15,		5,			300,		0,		0,			0,			{ 5,		500,		0,			0,				0 } },
+	{ "EE-3",				AMMO_POWERCELL,		15,		3,			350,		0,		0,			0,			{ 25,		850,		0,			0,				0 } },
+	{ "DC-17 Hand Pistol",			AMMO_METAL_BOLTS,	15,		1,			800,		0,		0,			0,			{ 2,		800,		0,			0,				0 } },
 	{ "Emplaced Gun",				AMMO_NONE,			0,		0,			100,		0,		0,			0,			{ 0,		100,		0,			0,				0 } },
 	{ "Turret",						AMMO_NONE,			0,		0,			0,			0,		0,			0,			{ 0,		0,			0,			0,				0 } },
 };
