@@ -1137,3 +1137,6 @@ void FX_CloneProjectileThink( centity_t *cent, const struct weaponInfo_s *weapon
 void FX_CloneAltFireThink( centity_t *cent, const struct weaponInfo_s *weapon );
 void FX_CloneWeaponHitWall( vec3_t origin, vec3_t normal );
 void FX_CloneWeaponHitPlayer( vec3_t origin, vec3_t normal, qboolean humanoid );
+qhandle_t SaberTrailShader;
+qhandle_t SaberBladeShader;
+qhandle_t SaberEndShader;
