@@ -24,6 +24,7 @@ rgbSaberGlow4Shader, rgbSaberCore4Shader, rgbSaberTrail4Shader,
 rgbSaberGlow5Shader, rgbSaberCore5Shader, rgbSaberTrail5Shader,
 blackSaberGlowShader, blackSaberCoreShader, blackBlurShader,
 sfxSaberTrailShader, sfxSaberBladeShader, sfxSaberBlade2Shader, sfxSaberEndShader, sfxSaberEnd2Shader;
+unstableRedSaberGlowShader, unstableRedSaberCoreShader;
 
 void UI_CacheSaberGlowGraphics( void ) {//FIXME: these get fucked by vid_restarts
 	redSaberGlowShader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/red_glow" );
@@ -40,6 +41,8 @@ void UI_CacheSaberGlowGraphics( void ) {//FIXME: these get fucked by vid_restart
 	purpleSaberCoreShader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/purple_line" );
 	rgbSaberGlowShader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/RGBglow1" );
 	rgbSaberCoreShader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/RGBcore1" );
+	unstableRedSaberGlowShader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/unstable_red_glow" );
+	unstableRedSaberCoreShader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/unstable_red_line" );
 
 	//Flame 1
 	rgbSaberGlow2Shader = trap->R_RegisterShaderNoMip( "gfx/effects/sabers/RGBglow2" );
@@ -271,6 +274,8 @@ static void UI_RGBForSaberColor( saber_colors_t color, vector3 *rgb, int bnum ) 
 		break;
 	case SABER_BLACK:
 		VectorSet( rgb, 1.0f, 1.0f, 1.0f );
+	case SABER_UNSTABLE_RED:
+		VectorSet( rgb, 1.0f, 1.0f, 1.0f );		
 	default:
 	case SABER_RGB:
 		if ( bnum == 0 ) {
@@ -359,6 +364,12 @@ void UI_DoSaber( vector3 *origin, vector3 *dir, float length, float lengthMax, f
 		glow = blackSaberGlowShader;
 		blade = blackSaberCoreShader;
 		break;
+	case SABER_UNSTABLE_RED:
+			glow = unstableRedSaberGlowShader;
+			blade = unstableRedSaberCoreShader;
+			VectorSet(rgb, 1.0f, 0.2f, 0.2f);
+			break;		
+			
 	}
 
 	UI_RGBForSaberColor( color, &rgb, bnum );
@@ -440,6 +451,9 @@ void UI_DoSaber( vector3 *origin, vector3 *dir, float length, float lengthMax, f
 		case SABER_BLACK:
 			sbak.customShader = blackSaberCoreShader;
 			break;
+		case SABER_UNSTABLE_RED:
+			sbak.customShader = unstable_redSaberCoreShader;
+			break;		
 		}
 	}
 
@@ -506,6 +520,9 @@ void UI_DoSFXSaber( vector3 *blade_muz, vector3 *blade_tip, vector3 *trail_tip, 
 	case SABER_BLACK:
 		glow = blackSaberGlowShader;
 		break;
+	case SABER_UNSTABLE_RED:
+		glow = unstable_redSaberGlowShader;
+		break;		
 	default:
 		glow = blueSaberGlowShader;
 		break;
