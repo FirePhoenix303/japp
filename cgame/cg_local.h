@@ -227,13 +227,29 @@ typedef struct clientInfo_s {
 	float		facial_blink, facial_frown, facial_aux;
 	int			superSmoothTime; //do crazy amount of smoothing
 	vector3		rgb1, rgb2;
+	
+//[2] array cause there are 2 sabers :)
+
+	vec3_t	rgb1;
+	vec3_t	rgb2;
+	vec3_t	PimpColorFrom[2];
+	vec3_t	PimpColorTo[2];
+	int		PimpStartTime[2];
+	int		PimpEndTime[2];
+	vec3_t  ScriptedColors[10][2];
+	int		ScriptedTimes[10][2];
+	int		ScriptedNum[2]; //number of colors
+	int		ScriptedActualNum[2];
+	int		ScriptedStartTime[2];
+	int		ScriptedEndTime[2];
+	
 } clientInfo_t;
 
 typedef struct cgLoopSound_s {
 	int entityNum;
 	vector3 origin;
 	vector3 velocity;
-	sfxHandle_t sfx;
+	sfxHandle_t sfx;s
 } cgLoopSound_t;
 
 // centity_t have a direct corespondence with gentity_t in the game, but
@@ -1140,3 +1156,5 @@ void FX_CloneWeaponHitPlayer( vec3_t origin, vec3_t normal, qboolean humanoid );
 qhandle_t SaberTrailShader;
 qhandle_t SaberBladeShader;
 qhandle_t SaberEndShader;
+qhandle_t	rgbSaberGlowShader;
+qhandle_t	rgbSaberCoreShader;
