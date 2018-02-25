@@ -3971,6 +3971,10 @@ void CG_DoSFXSaber(vec3_t blade_muz, vec3_t blade_tip, vec3_t trail_tip, vec3_t 
 	case SABER_PURPLE:
 		glow = cgs.media.purpleSaberGlowShader;
 		break;
+	case SABER_RGB:
+		glow = cgs.media.rgbSaberGlowShader;
+		blade = cgs.media.rgbSaberCoreShader;
+		break;	
 	default:
 		glow = cgs.media.blueSaberGlowShader;
 		break;
@@ -4320,7 +4324,8 @@ void CG_DoSaber( vector3 *origin, vector3 *dir, float length, float lengthMax, f
 		glow = media.gfx.world.saber.purple.glow;
 		blade = media.gfx.world.saber.purple.core;
 		break;
-
+		
+			
 	default:
 	case SABER_RGB:
 		glow = media.gfx.world.saber.rgb.glow;
