@@ -1158,3 +1158,5 @@ qhandle_t SaberBladeShader;
 qhandle_t SaberEndShader;
 qhandle_t	rgbSaberGlowShader;
 qhandle_t	rgbSaberCoreShader;
+qhandle_t	unstableRedSaberGlowShader;
+qhandle_t	unstableRedSaberCoreShader;
