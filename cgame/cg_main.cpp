@@ -2444,3 +2444,5 @@ Q_EXPORT intptr_t vmMain( int command, intptr_t arg0, intptr_t arg1, intptr_t ar
 cgs.media.SaberTrailShader = trap->R_RegisterShader( "SFX_Sabers/saber_trail" );
 cgs.media.SaberBladeShader = trap->R_RegisterShader( "SFX_Sabers/saber_blade" );
 cgs.media.SaberEndShader = trap->R_RegisterShader( "SFX_Sabers/saber_end" );
+cgs.media.rgbSaberGlowShader = trap->R_RegisterShader("gfx/effects/sabers/rgb_glow");
+cgs.media.rgbSaberCoreShader = trap->R_RegisterShader("gfx/effects/sabers/rgb_line");
