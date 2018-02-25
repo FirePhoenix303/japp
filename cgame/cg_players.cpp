@@ -3830,6 +3830,9 @@ static void CG_RGBForSaberColor( saber_colors_t color, vector3 *rgb, int cnum, i
 	case SABER_PURPLE:
 		VectorSet( rgb, 0.9f, 0.2f, 1.0f );
 		break;
+	case SABER_UNSTABLE_RED:
+			VectorSet(rgb, 1.0f, 0.2f, 0.2f);
+			break;		
 
 		//	case SABER_WHITE:
 	case SABER_BLACK:
@@ -3975,6 +3978,11 @@ void CG_DoSFXSaber(vec3_t blade_muz, vec3_t blade_tip, vec3_t trail_tip, vec3_t 
 		glow = cgs.media.rgbSaberGlowShader;
 		blade = cgs.media.rgbSaberCoreShader;
 		break;	
+			
+	case SABER_UNSTABLE_RED:
+			glow = cgs.media.unstableRedSaberGlowShader;
+			blade = cgs.media.unstableRedSaberCoreShader;
+			break;		
 	default:
 		glow = cgs.media.blueSaberGlowShader;
 		break;
@@ -4324,6 +4332,10 @@ void CG_DoSaber( vector3 *origin, vector3 *dir, float length, float lengthMax, f
 		glow = media.gfx.world.saber.purple.glow;
 		blade = media.gfx.world.saber.purple.core;
 		break;
+			
+	case SABER_UNSTABLE_RED:
+		VectorSet(rgb1, 255.0f, 0.0f, 0.0f);
+		break;		
 		
 			
 	default:
@@ -5551,6 +5563,9 @@ CheckTrail:
 					case SABER_BLACK:
 						VectorSet( &rgb1, 255.0f, 255.0f, 255.0f );
 						break;
+					case SABER_UNSTABLE_RED:
++	 					VectorSet(rgb1, 255.0f, 0.0f, 0.0f);
++	 					break;		
 
 					default:
 					case SABER_FLAME1:
